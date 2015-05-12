@@ -10,12 +10,12 @@
 - [JUnit - Executing Tests](executing-tests.md) ([bjtuweb-12283012](https://github.com/bjtuweb-12283012) 待校对)
 - [JUnit - Suite Test](suite-test.md) ([bjtuweb-12283012](https://github.com/bjtuweb-12283012) 待校对)
 - [JUnit - Ignore Test](ignore-test.md) ([bjtuweb-12283012](https://github.com/bjtuweb-12283012) 待校对)
-- [JUnit - Time Test](time-test.md) ([bjtuweb-12283007](https://github.com/bjtuweb-12283007) 已认领)
-- [JUnit - Exceptions Test](exceptions-test.md) ([bjtuweb-12283007](https://github.com/bjtuweb-12283007) 已认领)
-- [JUnit - Parameterized Test](parameterized-test.md) ([bjtuweb-12283007](https://github.com/bjtuweb-12283007) 已认领)
-- [JUnit - Plug with Ant](plug-with-ant.md) ([icodeu](https://github.com/icodeu) 已认领)
-- [JUnit - Plug with Eclipse](plug-with-eclipse.md) ([icodeu](https://github.com/icodeu) 已认领)
-- [JUnit - Extensions](extensions.md) ([icodeu](https://github.com/icodeu) 已认领)
+- [JUnit - Time Test](time-test.md) ([bjtuweb-12283007](https://github.com/bjtuweb-12283007) 待校对)
+- [JUnit - Exceptions Test](exceptions-test.md) ([bjtuweb-12283007](https://github.com/bjtuweb-12283007) 待校对)
+- [JUnit - Parameterized Test](parameterized-test.md) ([bjtuweb-12283007](https://github.com/bjtuweb-12283007) 待校对)
+- [JUnit - Plug with Ant](plug-with-ant.md) ([icodeu](https://github.com/icodeu) 待校对)
+- [JUnit - Plug with Eclipse](plug-with-eclipse.md) ([icodeu](https://github.com/icodeu) 待校对)
+- [JUnit - Extensions](extensions.md) ([icodeu](https://github.com/icodeu) 待校对)
 
 
 ## 原文链接
