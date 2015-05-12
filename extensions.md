@@ -1,0 +1,118 @@
+
+
+以下是 JUnit 扩展
+
+- Cactus
+- JWebUnit
+- XMLUnit
+- MockObject
+
+## Cactus
+
+Cactus 是一个简单框架用来测试服务器端的 Java 代码（Servlets, EJBs, Tag Libs, Filters）。Cactus 的设计意图是用来减小为服务器端代码写测试样例的成本。它使用 JUnit 并且在此基础上进行扩展。Cactus 实现了 in-container 的策略，意味着在容器内部执行测试。
+
+Cactus 系统由以下几个部分组成：
+
+- **Cactus Framework（Cactus 框架）** 是 Cactus 的核心。它是提供 API 写 Cactus 测试代码的引擎。
+- **Cactus Integration Modules（Cactus 集成模块）** 它是提供使用 Cactus Framework（Ant scripts, Eclipse plugin, Maven plugin）的前端和框架。
+
+这是使用 cactus 的样例代码。
+
+```
+import org.apache.cactus.*;
+import junit.framework.*;
+
+public class TestSampleServlet extends ServletTestCase {
+   @Test
+   public void testServlet() {
+      // Initialize class to test
+      SampleServlet servlet = new SampleServlet();
+
+      // Set a variable in session as the doSomething()
+      // method that we are testing 
+      session.setAttribute("name", "value");
+
+      // Call the method to test, passing an 
+      // HttpServletRequest object (for example)
+      String result = servlet.doSomething(request);
+
+      // Perform verification that test was successful
+      assertEquals("something", result);
+      assertEquals("otherValue", session.getAttribute("otherName"));
+   }
+}
+```
+
+## JWebUnit
+
+JWebUnit 是一个基于 Java 的用于 web 应用的测试框架。它以一种统一、简单测试接口的方式包装了如 HtmlUnit 和 Selenium 这些已经存在的框架来允许你快速地测试 web 应用程序的正确性。
+
+JWebUnit 提供了一种高级别的 Java API 用来处理结合了一系列验证程序正确性的断言的 web 应用程序。这包括通过链接，表单的填写和提交，表格内容的验证和其他 web 应用程序典型的业务特征。
+
+这个简单的导航方法和随时可用的断言允许建立更多的快速测试而不是仅仅使用 JUnit 和 HtmlUnit。另外如果你想从 HtmlUnit 切换到其它的插件，例如 Selenium(很快可以使用)，那么不用重写你的测试样例代码。
+
+以下是样例代码。
+
+```
+import junit.framework.TestCase;
+import net.sourceforge.jwebunit.WebTester;
+
+public class ExampleWebTestCase extends TestCase {
+   private WebTester tester;
+   
+   public ExampleWebTestCase(String name) {
+        super(name);
+        tester = new WebTester();
+   }
+   //set base url
+   public void setUp() throws Exception {
+       getTestContext().setBaseUrl("http://myserver:8080/myapp");
+   }
+   // test base info
+   @Test
+   public void testInfoPage() {
+       beginAt("/info.html");
+   }
+}
+```
+
+## XMLUnit
+
+XMLUnit 提供了一个单一的 JUnit 扩展类，即 XMLTestCase，还有一些允许断言的支持类：
+
+- 比较两个 XML 文件的不同（通过使用 Diff 和 DetailedDiff 类）
+- 一个 XML 文件的验证（通过使用 Validator 类）
+- 使用 XSLT 转换一个 XML 文件的结果（通过使用 Transform 类）
+- 对一个 XML 文件 XPath 表达式的评估（通过实现 XpathEngine 接口）
+- 一个 XML 文件进行 DOM Traversal 后的独立结点（通过使用 NodeTest 类）
+
+我们假设有两个我们想要比较和断言它们相同的 XML 文件，我们可以写一个如下的简单测试类：
+
+```
+import org.custommonkey.xmlunit.XMLTestCase;
+
+public class MyXMLTestCase extends XMLTestCase {
+
+   // this test method compare two pieces of the XML
+   @Test
+   public void testForXMLEquality() throws Exception {
+      String myControlXML = "<msg><uuid>0x00435A8C</uuid></msg>";
+      String myTestXML = "<msg><localId>2376</localId></msg>";
+      assertXMLEqual("Comparing test xml to control xml",
+      myControlXML, myTestXML);
+   }
+}
+``` 
+
+## MockObject
+
+在一个单元测试中，虚拟对象可以模拟复杂的，真实的（非虚拟）对象的行为，因此当一个真实对象
+
+
+
+
+
+
+
+
+
