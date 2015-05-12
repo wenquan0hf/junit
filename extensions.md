@@ -1,4 +1,4 @@
-
+# JUnit - Extensions
 
 以下是 JUnit 扩展
 
@@ -9,7 +9,7 @@
 
 ## Cactus
 
-Cactus 是一个简单框架用来测试服务器端的 Java 代码（Servlets, EJBs, Tag Libs, Filters）。Cactus 的设计意图是用来减小为服务器端代码写测试样例的成本。它使用 JUnit 并且在此基础上进行扩展。Cactus 实现了 in-container 的策略，意味着在容器内部执行测试。
+Cactus 是一个简单框架用来测试服务器端的 Java 代码（Servlets, EJBs, Tag Libs, Filters）。Cactus 的设计意图是用来减小为服务器端代码写测试样例的成本。它使用 JUnit 并且在此基础上进行扩展。Cactus 实现了 in-container 的策略，意味着可以在容器内部执行测试。
 
 Cactus 系统由以下几个部分组成：
 
@@ -106,10 +106,45 @@ public class MyXMLTestCase extends XMLTestCase {
 
 ## MockObject
 
-在一个单元测试中，虚拟对象可以模拟复杂的，真实的（非虚拟）对象的行为，因此当一个真实对象
+在一个单元测试中，虚拟对象可以模拟复杂的，真实的（非虚拟）对象的行为，因此当一个真实对象不现实或不可能包含进一个单元测试的时候非常有用。
 
+用虚拟对象进行测试时一般的编程风格包括：
 
+- 创建虚拟对象的实例
+- 在虚拟对象中设置状态和描述
+- 结合虚拟对象调用域代码作为参数
+- 在虚拟对象中验证一致性
 
+以下是使用 Jmock 的 MockObject 例子。
+
+```
+import org.jmock.Mockery;
+import org.jmock.Expectations;
+
+class PubTest extends TestCase {
+   Mockery context = new Mockery();
+   public void testSubReceivesMessage() {
+      // set up
+      final Sub sub = context.mock(Sub.class);
+
+      Pub pub = new Pub();
+      pub.add(sub);
+    
+      final String message = "message";
+      
+      // expectations
+      context.checking(new Expectations() {
+         oneOf (sub).receive(message);
+      });
+
+      // execute
+      pub.publish(message);
+      
+      // verify
+      context.assertIsSatisfied();
+   }
+}
+```
 
 
 
