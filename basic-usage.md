@@ -31,9 +31,10 @@ public class MessageUtil {
 ## 创建 Test Case 类
 
 - 创建一个名为 TestJunit.java 的测试类。
-- 向测试类中添加名为 testPrintMessage() 的方法
-- 向方法中添加 Annotaion @Test
-- 执行测试条件并且应用 Junit 的 assertEquals API 来检查  
+- 向测试类中添加名为 testPrintMessage() 的方法。
+- 向方法中添加 Annotaion @Test。
+- 执行测试条件并且应用 Junit 的 assertEquals API 来检查。
+
 在 **C:\ > JUNIT_WORKSPACE** 路径下创建一个文件名为 TestJunit.java 的类  
 
 ```
@@ -58,6 +59,7 @@ public class TestJunit {
 - 获取在 Result Object 中运行的测试案例的结果
 - 获取 Result Object 的 getFailures() 方法中的失败结果
 - 获取 Result object 的 wasSuccessful() 方法中的成功结果
+
 在 **C:\ > JUNIT_WORKSPACE** 路径下创建一个文件名为 TestRunner.java 的类来执行测试案例  
 
 ```
