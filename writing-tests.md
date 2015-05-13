@@ -1,6 +1,8 @@
-# JUnit-编写测试 #
-在这里你将会看到一个应用 POJO 类， Business logic 类和在 test runner 中运行的 test 类的 JUnit 测试的例子。  
+# JUnit-编写测试
+
+在这里你将会看到一个应用 POJO 类，Business logic 类和在 test runner 中运行的 test 类的 JUnit 测试的例子。  
 在 **C:\ > JUNIT_WORKSPACE** 路径下创建一个名为 **EmployeeDetails.java** 的 POJO 类。  
+
 ```
 public class EmployeeDetails {
 
@@ -46,11 +48,15 @@ public class EmployeeDetails {
    }
 }
 ```  
+
 **EmployeeDetails** 类被用于  
+
 - 取得或者设置雇员的姓名的值  
 - 取得或者设置雇员的每月薪水的值  
 - 取得或者设置雇员的年龄的值  
+
 在 **C:\ > JUNIT_WORKSPACE** 路径下创建一个名为 **EmpBusinessLogic.java** 的 business logic 类  
+
 ```
 public class EmpBusinessLogic {
    // Calculate the yearly salary of employee
@@ -72,10 +78,14 @@ public class EmpBusinessLogic {
    }
 }
 ```  
+
 **EmpBusinessLogic** 类被用来计算  
+
 - 雇员每年的薪水  
 - 雇员的评估金额  
+
 在 **C:\ > JUNIT_WORKSPACE** 路径下创建一个名为 **TestEmployeeDetails.java** 的准备被测试的测试案例类  
+
 ```
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
@@ -104,11 +114,15 @@ public class TestEmployeeDetails {
       assertEquals(96000, salary, 0.0);
    }
 }
+
 ```  
 **TestEmployeeDetails** 是用来测试 EmpBusinessLogic 类的方法的，它  
+
 - 测试雇员的每年的薪水  
 - 测试雇员的评估金额  
+
 现在让我们在 **C:\ > JUNIT_WORKSPACE** 路径下创建一个名为 **TestRunner.java** 的类来执行测试案例类  
+
 ```
 import org.junit.runner.JUnitCore;
 import org.junit.runner.Result;
@@ -123,17 +137,23 @@ public class TestRunner {
       System.out.println(result.wasSuccessful());
    }
 } 
-```  
+```
+
 用javac编译 Test case 和 Test Runner 类  
+
 ```
 C:\JUNIT_WORKSPACE>javac EmployeeDetails.java 
 EmpBusinessLogic.java TestEmployeeDetails.java TestRunner.java
 ```  
+
 现在运行将会运行 Test Case 类中定义和提供的测试案例的 Test Runner  
+
 ```
 C:\JUNIT_WORKSPACE>java TestRunner
 ```  
+
 检查运行结果  
+
 ```
 true
 ```  
