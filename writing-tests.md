@@ -1,6 +1,7 @@
-# JUnit-编写测试
+# JUnit - 编写测试
 
 在这里你将会看到一个应用 POJO 类，Business logic 类和在 test runner 中运行的 test 类的 JUnit 测试的例子。  
+
 在 **C:\ > JUNIT_WORKSPACE** 路径下创建一个名为 **EmployeeDetails.java** 的 POJO 类。  
 
 ```
@@ -116,7 +117,7 @@ public class TestEmployeeDetails {
 }
 
 ```  
-**TestEmployeeDetails** 是用来测试 EmpBusinessLogic 类的方法的，它  
+**TestEmployeeDetails** 是用来测试 **EmpBusinessLogic** 类的方法的，它  
 
 - 测试雇员的每年的薪水  
 - 测试雇员的评估金额  
