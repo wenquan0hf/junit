@@ -2,10 +2,11 @@
 
 ## 测试套件
 
-测试套件意味着捆绑几个单元测试用例并且一起执行他们。在 JUnit 中， @RunWith 和 @Suite 注释用来运行套件测试这个教程将向您展示一个例子，其中含有两个测试样例 TestJunit1 & TestJunit2 类，我们将使用测试套件一起运行他们。
+**测试套件**意味着捆绑几个单元测试用例并且一起执行他们。在 JUnit 中，**@RunWith** 和 **@Suite** 注释用来运行套件测试。这个教程将向您展示一个例子，其中含有两个测试样例 TestJunit1 & TestJunit2 类，我们将使用测试套件一起运行他们。
 
 ## 创建一个类
-在目录  C:\ > JUNIT_WORKSPACE 中创建一个被测试的 Java 类命名为 MessageUtil.java。
+
+在目录  **C:\ > JUNIT_WORKSPACE** 中创建一个被测试的 Java 类命名为 MessageUtil.java
 
 ```
 /*
@@ -36,7 +37,8 @@ public class MessageUtil {
 }  
 ```
 
-## 创建测试用例类
+## 创建 Test Case 类
+
 在目录 C:\ > JUNIT_WORKSPACE 创建一个 java 测试类叫做  TestJunit1.java。
 
 ```
@@ -57,7 +59,7 @@ public class TestJunit1 {
 }
 ```
 
-在目录 C:\ > JUNIT_WORKSPACE 创建一个 java 测试类叫做  TestJunit2.java。
+在目录 **C:\ > JUNIT_WORKSPACE** 创建一个 java 测试类叫做 TestJunit2.java。
 
 ```
 import org.junit.Test;
@@ -78,13 +80,13 @@ public class TestJunit2 {
 }
 ```
 
-## 使用测试套件类
+## 使用 Test Suite 类
 
-- 创建一个 java 类
-- 在类中附上 @RunWith(Suite.class) 注释
-- 使用 @Suite.SuiteClasses 注释给 JUnit 测试类加上引用
+- 创建一个 java 类。
+- 在类中附上 @RunWith(Suite.class) 注释。
+- 使用 @Suite.SuiteClasses 注释给 JUnit 测试类加上引用。
 
-在目录 C:\ > JUNIT_WORKSPACE 创建一个 java 类文件叫做  TestSuite.java 来执行测试用例。
+在目录 **C:\ > JUNIT_WORKSPACE** 创建一个 java 类文件叫做 TestSuite.java 来执行测试用例。
 
 ```
 import org.junit.runner.RunWith;
@@ -98,9 +100,9 @@ public class JunitTestSuite {
 }  
 ```
 
-## 创建测试运行器类
+## 创建 Test Runner 类
 
-在目录 C:\ > JUNIT_WORKSPACE 创建一个 java 类文件叫做  TestRunner.java 来执行测试用例。
+在目录 **C:\ > JUNIT_WORKSPACE** 创建一个 java 类文件叫做 TestRunner.java 来执行测试用例。
 
 ```
 import org.junit.runner.JUnitCore;
@@ -117,6 +119,7 @@ public class TestRunner {
    }
 }  
 ```
+
 使用 javac 命令编译所有的 java 类
 
 ```
@@ -124,13 +127,13 @@ C:\JUNIT_WORKSPACE>javac MessageUtil.java TestJunit1.java
 TestJunit2.java JunitTestSuite.java TestRunner.java
 ```
 
-现在运行测试运行器，即运行所有的在之前 Test Case 类中定义的测试用例。
+现在运行 Test Runner，即运行所有的在之前 Test Case 类中定义的测试用例。
 
 ```
 C:\JUNIT_WORKSPACE>java TestRunner
 ```
 
-## 验证输出
+验证输出
 
 ```
 Inside testPrintMessage()
