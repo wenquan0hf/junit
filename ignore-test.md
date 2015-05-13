@@ -1,6 +1,6 @@
 # JUnit - 忽略测试
 
-有时可能会发生我们的代码还没有准备好的情况，这时测试用例去测试这个方法或代码的时候会造成失败。 @Ignore 注释会在这种情况时帮助我们。
+有时可能会发生我们的代码还没有准备好的情况，这时测试用例去测试这个方法或代码的时候会造成失败。**@Ignore** 注释会在这种情况时帮助我们。
 
 - 一个含有 @Ignore 注释的测试方法将不会被执行。
 - 如果一个测试类有 @Ignore 注释，则它的测试方法将不会执行。
@@ -9,7 +9,7 @@
 
 ## 创建一个类
 
-- 在目录 C:\ > JUNIT_WORKSPACE 中创建一个将被测试的 java 类命名为 MessageUtil.java。 
+- 在目录 **C:\ > JUNIT_WORKSPACE** 中创建一个将被测试的 java 类命名为 MessageUtil.java。 
 
 ```
 /*
@@ -40,12 +40,13 @@ public class MessageUtil {
 } 
 ```
 
-## 创建测试用例类
+## 创建 Test Case 类
+
 - 创建 java 测试类命名为 TestJunit.java。
-- 在类中加入测试方法 testPrintMessage() 和  testSalutationMessage()
+- 在类中加入测试方法 testPrintMessage() 和 testSalutationMessage()。
 - 在方法 testPrintMessage() 中加入 @Ignore 注释。
 
-在目录 C:\ > JUNIT_WORKSPACE 中创建一个 java 类文件命名为 TestJunit.java
+在目录 **C:\ > JUNIT_WORKSPACE** 中创建一个 java 类文件命名为 TestJunit.java
 
 ```
 import org.junit.Test;
@@ -74,9 +75,9 @@ public class TestJunit {
 }
 ```
 
-## 创建测试运行器类
+## 创建 Test Runner 类
 
-在目录 C:\ > JUNIT_WORKSPACE 创建一个 java 类文件叫做  TestRunner.java 来执行测试用例。
+在目录 **C:\ > JUNIT_WORKSPACE** 创建一个 java 类文件叫做 TestRunner.java 来执行测试用例。
 
 ```
 import org.junit.runner.JUnitCore;
@@ -94,21 +95,27 @@ public class TestRunner {
 }  
 ```
 
-使用 javac 命令编译 MessageUtil, 测试用例和测试运行器类。
+使用 javac 命令编译 MessageUtil, Test case 和 Test Runner 类。
 
 ```
 C:\JUNIT_WORKSPACE>javac MessageUtil.java TestJunit.java TestRunner.java
 ```
 
-现在运行测试运行期类，即不会运行在Test Case 类中定义的 testPrintMessage() 测试用例。
+现在运行 Test Runner 类，即不会运行在 Test Case 类中定义的 testPrintMessage() 测试用例。
 
 ```
 C:\JUNIT_WORKSPACE>java TestRunner
 ```
 
-验证输出。 testPrintMessage() 测试用例并没有被测试。
+验证输出。testPrintMessage() 测试用例并没有被测试。
 
-现在更新在目录 C:\ > JUNIT_WORKSPACE 中的 TestJunit 在类级别上使用@Ignore 来忽略所有的测试用例
+```
+Inside testSalutationMessage()
+Hi!Robert
+true
+```
+
+现在更新在目录 **C:\ > JUNIT_WORKSPACE** 中的 TestJunit 在类级别上使用 @Ignore 来忽略所有的测试用例
 
 ```
 import org.junit.Test;
@@ -160,7 +167,8 @@ public class TestRunner {
    }
 }
 ```
-现在运行 Test Runner 即不会运行在 Test Case 类中定义的 任何一个测试样例。
+
+现在运行 Test Runner 即不会运行在 Test Case 类中定义的任何一个测试样例。
 
 ```
 C:\JUNIT_WORKSPACE>java TestRunner
