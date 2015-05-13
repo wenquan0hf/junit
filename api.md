@@ -1,8 +1,8 @@
-# JUNIT - API
+# JUnit - API
 
-## Junit 中的重要的 API
+## JUnit 中的重要的 API
 
-Junit 中的最重要的程序包是 **junit.framework** 它包含了所有的核心类。一些重要的类列示如下：   
+JUnit 中的最重要的程序包是 **junit.framework** 它包含了所有的核心类。一些重要的类列示如下：   
 
 |序号   | 类的名称         | 类的功能 |  
 |:---------|:------------|:--------|  
@@ -31,6 +31,7 @@ public class Assert extends java.lang.Object
 |6|**void fail()** <br>在没有报告的情况下使测试不通过 |  
 
 下面让我们在例子中来测试一下上面提到的一些方法。在 **C:\ > JUNIT_WORKSPACE** 目录下创建一个名为 TestJunit1.java 的类。  
+
 ```
 import org.junit.Test;
 import static org.junit.Assert.*;
