@@ -1,6 +1,6 @@
 # JUnit - 执行测试
 
-测试用例是使用 JUnitCore 类来执行的。JUnitCore 是运行测试的正面。它支持运行 JUnit 4 测试, JUnit 3.8.x 测试,或者他们的混合。
+测试用例是使用 JUnitCore 类来执行的。JUnitCore 是运行测试的外观类。它支持运行 JUnit 4 测试, JUnit 3.8.x 测试,或者他们的混合。
 要从命令行运行测试，可以运行 java org.junit.runner.JUnitCore <TestClass>。对于只有一次的对于只有一次的测试运行，可以使用静态方法 runClasses(Class[])。
 
 下面是 org.junit.runner.JUnitCore 类的声明：
