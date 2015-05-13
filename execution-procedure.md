@@ -1,8 +1,8 @@
 # JUnit - 执行过程
 
-本教程阐明了 JUnite 中的方法执行过程，即哪一个方法首先被调用，哪一个方法在一个方法之后调用。以下为 JUnite 测试方法的API，并且会用例子来说明。
+本教程阐明了 JUnit 中的方法执行过程，即哪一个方法首先被调用，哪一个方法在一个方法之后调用。以下为 JUnit 测试方法的 API，并且会用例子来说明。
 
-在目录 C:\ > JUNIT_WORKSPACE 创建一个 java 类文件命名为 JunitAnnotation.java 来测试注释程序。
+在目录 **C:\ > JUNIT_WORKSPACE** 创建一个 java 类文件命名为 JunitAnnotation.java 来测试注释程序。
 
 ```
 import org.junit.After;
@@ -52,7 +52,7 @@ public class ExecutionProcedureJunit {
 }
 ```
 
-接下来，让我们在目录  C:\ > JUNIT_WORKSPACE 中创建一个 java 类文件 TestRunner.java 来执行注释程序。
+接下来，让我们在目录 **C:\ > JUNIT_WORKSPACE** 中创建一个 java 类文件 TestRunner.java 来执行注释程序。
 
 ```
 import org.junit.runner.JUnitCore;
@@ -97,8 +97,8 @@ in after class
 
 观察以上的输出，这是 JUnite 执行过程：
 
-- 首先 beforeClass() 方法执行，并且只执行一次。
-- 最后 afterClass() 方法执行，并且只执行一次。
+- beforeClass() 方法首先执行，并且只执行一次。
+- afterClass() 方法最后执行，并且只执行一次。
 - before() 方法针对每一个测试用例执行，但是是在执行测试用例例之前。
 - after() 方法针对每一个测试用例执行，但是是在执行测试用例之后。
-- 在 before() 方法和after() 方法之间，执行每一个测试用例。
+- 在 before() 方法和 after() 方法之间，执行每一个测试用例。
