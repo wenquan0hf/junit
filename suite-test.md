@@ -6,7 +6,7 @@
 
 ## 创建一个类
 
-在目录  **C:\ > JUNIT_WORKSPACE** 中创建一个被测试的 Java 类命名为 MessageUtil.java
+在目录  **C:\ > JUNIT_WORKSPACE** 中创建一个被测试的 java 类命名为 MessageUtil.java
 
 ```
 /*
@@ -39,7 +39,7 @@ public class MessageUtil {
 
 ## 创建 Test Case 类
 
-在目录 C:\ > JUNIT_WORKSPACE 创建一个 java 测试类叫做  TestJunit1.java。
+在目录 **C:\ > JUNIT_WORKSPACE** 创建一个 java 测试类叫做  TestJunit1.java。
 
 ```
 import org.junit.Test;
