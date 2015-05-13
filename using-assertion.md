@@ -1,22 +1,28 @@
-# JUnit-使用断言（Assertion） #
-## 断言（Assertion） ##
+# JUnit - 使用断言（Assertion）
+
+## 断言（Assertion）
+
 所有的断言都包含在 Assert 类中  
+
 ```
 public class Assert extends java.lang.Object
 ```  
-这个类提供了很多编写测试的有用的断言的方法。只有失败的断言才会被记录。Assert 类中的一些有用的方法列式如下：  
+
+这个类提供了很多编写测试的有用的断言的方法。只有失败的断言才会被记录。**Assert** 类中的一些有用的方法列式如下：  
 
 |序号   | 方法和描述         |
-|---------|:------------:|  
-|1|void assertEquals(boolean expected, boolean actual) 检查两个变量或者等式是否平衡 |  
-|2|void assertTrue(boolean expected, boolean actual) 检查条件为真|
-|3|void assertFalse(boolean condition) 检查条件为假|
-|4|void assertNotNull(Object object) 检查对象不为空|
-|5|void assertNull(Object object) 检查对象为空|
-|6|void assertSame(boolean condition) assertSame() 方法检查两个相关对象是否指向同一个对象|
-|7|void assertNotSame(boolean condition) assertNotSame() 方法检查两个相关对象是否不指向同一个对象|
-|8|void assertArrayEquals(expectedArray, resultArray) assertArrayEquals() 方法检查两个数组是否相等|
+|:---------|:------------|  
+|1|**void assertEquals(boolean expected, boolean actual)**<br> 检查两个变量或者等式是否平衡 |  
+|2|**void assertTrue(boolean expected, boolean actual)**<br> 检查条件为真|
+|3|**void assertFalse(boolean condition)**<br> 检查条件为假|
+|4|**void assertNotNull(Object object)**<br> 检查对象不为空|
+|5|**void assertNull(Object object)**<br> 检查对象为空|
+|6|**void assertSame(boolean condition)**<br> assertSame() 方法检查两个相关对象是否指向同一个对象|
+|7|**void assertNotSame(boolean condition)**<br> assertNotSame() 方法检查两个相关对象是否不指向同一个对象|
+|8|**void assertArrayEquals(expectedArray, resultArray)**<br> assertArrayEquals() 方法检查两个数组是否相等|
+
 下面我们在例子中试验一下上面提到的各种方法。在 **C:\ > JUNIT_WORKSPACE** 路径下创建一个文件名为 TestAssertions.java 的类  
+
 ```
 import org.junit.Test;
 import static org.junit.Assert.*;
@@ -61,8 +67,10 @@ public class TestAssertions {
       assertArrayEquals(expectedArray, resultArray);
    }
 }
-```  
+```
+
 接下来，我们在 **C:\ > JUNIT_WORKSPACE** 路径下创建一个文件名为 **TestRunner.java** 的类来执行测试案例  
+
 ```
 import org.junit.runner.JUnitCore;
 import org.junit.runner.Result;
@@ -78,32 +86,42 @@ public class TestRunner2 {
    }
 } 
 ```  
+
 用javac编译 Test case 和 Test Runner 类  
+
 ```
 C:\JUNIT_WORKSPACE>javac TestAssertions.java TestRunner.java
 
 ```  
+
 现在运行将会运行 Test Case 类中定义和提供的测试案例的 Test Runner  
+
 ```
 C:\JUNIT_WORKSPACE>java TestRunner
 ```  
+
 检查运行结果  
+
 ```
 true
-```  
-## 注释（Annotation） ##
-注释就好像你可以在你的代码中添加并且在方法或者类中应用的元标签。JUnit 中的这些注释为我们提供了测试方法的相关信息，哪些方法将会在测试方法前后应用，哪些方法将会在所有方法前后应用，哪些方法将会在执行中被忽略。  
+``` 
+
+## 注释（Annotation）
+
+注释就好像你可以在你的代码中添加并且在方法或者类中应用的元标签。JUnit中的这些注释为我们提供了测试方法的相关信息，哪些方法将会在测试方法前后应用，哪些方法将会在所有方法前后应用，哪些方法将会在执行中被忽略。  
 JUnit 中的注释的列表以及他们的含义：
 
 |序号   | 注释和描述         |
-|---------|:------------:|  
-|1|@Test 这个注释说明依附在 JUnit 的 public void 方法可以作为一个测试案例|  
-|2|@Before 有些测试在运行前需要创造几个相似的对象。在 public void 方法加该注释是因为该方法需要在 test 方法前运行|
-|3|@After 如果你将外部资源在 Before 方法中分配，那么你需要在测试运行后释放他们。在 public void 方法加该注释是因为该方法需要在 test 方法后运行|
-|4|@BeforeClass 在 public void 方法加该注释是因为该方法需要在类中所有方法前运行|
-|5|@AfterClass 它将会使方法在所有测试结束后执行。这个可以用来进行清理活动。|
-|6|@Ignore 这个注释是用来忽略有关不需要执行的测试的。|  
+|:---------|:------------|  
+|1|**@Test**<br> 这个注释说明依附在 JUnit 的 public void 方法可以作为一个测试案例。|  
+|2|**@Before**<br> 有些测试在运行前需要创造几个相似的对象。在 public void 方法加该注释是因为该方法需要在 test 方法前运行。|
+|3|**@After**<br> 如果你将外部资源在 Before 方法中分配，那么你需要在测试运行后释放他们。在 public void 方法加该注释是因为该方法需要在 test 方法后运行。|
+|4|**@BeforeClass**<br> 在 public void 方法加该注释是因为该方法需要在类中所有方法前运行。|
+|5|**@AfterClass**<br> 它将会使方法在所有测试结束后执行。这个可以用来进行清理活动。|
+|6|**@Ignore**<br> 这个注释是用来忽略有关不需要执行的测试的。|  
+
 在 **C:\ > JUNIT_WORKSPACE** 路径下创建一个文件名为 JunitAnnotation.java 的类来测试注释  
+
 ```
 import org.junit.After;
 import org.junit.AfterClass;
@@ -151,7 +169,9 @@ public class JunitAnnotation {
    }
 }
 ```    
+
 接下来，我们在 **C:\ > JUNIT_WORKSPACE** 路径下创建一个文件名为 **TestRunner.java** 的类来执行注释  
+
 ```
 import org.junit.runner.JUnitCore;
 import org.junit.runner.Result;
@@ -167,16 +187,21 @@ public class TestRunner {
    }
 } 
 ```  
+
 用javac编译 Test case 和 Test Runner 类  
+
 ```
 C:\JUNIT_WORKSPACE>javac TestAssertions.java TestRunner.java
-
 ```  
+
 现在运行将会运行 Test Case 类中定义和提供的测试案例的 Test Runner  
+
 ```
 C:\JUNIT_WORKSPACE>java TestRunner
 ```  
+
 检查运行结果  
+
 ```
 in before class
 in before
