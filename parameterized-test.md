@@ -12,7 +12,7 @@ Junit 4 引入了一个新的功能**参数化测试**。参数化测试允许�
 
 ## 创建一个类 
 
-- 在 **C:\ > JUNIT_WORKSPACE**创建一个叫做 PrimeNumberChecker.java 的 java 类来测试。  
+- 在 **C:\ > JUNIT_WORKSPACE** 创建一个叫做 PrimeNumberChecker.java 的 java 类来测试。  
 
 ```
 public class PrimeNumberChecker {
@@ -112,7 +112,7 @@ C:\JUNIT_WORKSPACE>javac PrimeNumberChecker.java PrimeNumberCheckerTest.java
 TestRunner.java
 ```
 
-现在运行 Test Runner，它将运行由提供的 Test Case 类中所定义的 测试样例。
+现在运行 Test Runner，它将运行由提供的 Test Case 类中所定义的测试样例。
 
 ```
 C:\JUNIT_WORKSPACE>java TestRunner
