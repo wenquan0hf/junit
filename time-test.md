@@ -38,7 +38,7 @@ public class MessageUtil {
 
 ## 创建 Test Case 类 
 
-- 创建一个叫做 TestJunit.java的 java 测试类。  
+- 创建一个叫做 TestJunit.java 的 java 测试类。  
 - 给 testPrintMessage() 测试样例添加 1000 的暂停时间。  
 
 在 **C:\JUNIT_WORKSPACE** 中创建一个文件名为 TestJunit.java 的 java 类。  
@@ -94,13 +94,13 @@ public class TestRunner {
 C:\JUNIT_WORKSPACE>javac MessageUtil.java TestJunit.java TestRunner.java
 ```
 
-现在运行 Test Runner，它将运行由提供的 Test Case 类中所定义的 测试样例。  
+现在运行 Test Runner，它将运行由提供的 Test Case 类中所定义的测试样例。  
 
 ```
 C:\JUNIT_WORKSPACE>java TestRunner
 ```
 
-验证输出。testPrintMessage()测试样例将标记单元测试失败。
+验证输出。testPrintMessage() 测试样例将标记单元测试失败。
 
 ```
 Inside testPrintMessage()
