@@ -1,6 +1,6 @@
 # JUnit - Eclipse 插件  
 
-为了设置带有 eclipse 的 JUnit，以下步骤需要被遵循。  
+为了设置带有 eclipse 的 JUnit，需要遵循以下步骤。  
 
 ## 步骤 1：下载 Junit archive
 
@@ -17,7 +17,9 @@
 ## 步骤 2：设置 Eclipse 环境  
 
 - 打开 eclipse -> 右击 project 并 点击 property > Build Path > Configure Build Path，然后使用 *Add External Jar* 按钮在函数库中添加 junit-4.10.jar。
-![1]()
+
+![image](images/eclipse_properties.jpg)
+
 - 我们假设你的 eclipse 已经内置了 junit 插件并且它在 C:\>eclipse/plugins 目录下不能获得，那么你可以从 [JUnit Plugin](http://sourceforge.net/projects/e-junitdoclet/files/latest/download) 上下载。在 eclipse 的插件文件夹中解压下载的 zip 文件。最后重启 eclipse。  
 
 **现在你的 eclipse 已经准备好 JUnit 测试样例的开发了。**  
@@ -68,8 +70,13 @@ public class TestJunit {
 ```
 
 下面是项目结构
-![]()
-最后，通过右击程序和 run as junit 核实程序的输出。
-![]()
-核实结果
-![]()
+
+![image](images/junit_project_structure.jpg)
+
+最后，通过右击程序和 run as junit 验证程序的输出。
+
+![image](images/junit_run.jpg)
+
+验证结果
+
+![image](images/junit_success.jpg)
