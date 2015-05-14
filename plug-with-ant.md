@@ -1,6 +1,6 @@
 # JUnit - ANT 插件
 
-在这个例子中，我们将展示如何使用 ANT 运行 JUnit。让我们跟随一下步骤：  
+在这个例子中，我们将展示如何使用 ANT 运行 JUnit。让我们跟随以下步骤：  
 
 ## 步骤 1:下载 Apache Ant
 
@@ -22,7 +22,7 @@
 |Linux|导出 ANT_HOME=/usr/local/\apache-ant-1.8.4|
 |Mac|export ANT_HOME=/Library/\apache-ant-1.8.4|
 
-附加 ANT 编译器地址 到系统路径对于不同的操作系统来说如下所示： 
+附加 ANT 编译器地址到系统路径，对于不同的操作系统来说如下所示： 
 
 |**操作系统**      |**输出**   |
 |:----------|:----------|
@@ -46,7 +46,7 @@
 - 在 **C:\ > JUNIT_WORKSPACE > TestJunitWithAnt** 中创建文件夹 **src**
 - 在 **C:\ > JUNIT_WORKSPACE > TestJunitWithAnt** 中创建文件夹 **test**  
 - 在 **C:\ > JUNIT_WORKSPACE > TestJunitWithAnt** 中创建文件夹 **lib**  
-- 在 **C:\ > JUNIT_WORKSPACE > TestJunitWithAnt >src** 文件夹中创建 MessageUtil 类。
+- 在 **C:\ > JUNIT_WORKSPACE > TestJunitWithAnt >src** 文件夹中创建 MessageUtil 类
 
 ```
 /*
