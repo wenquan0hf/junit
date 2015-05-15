@@ -70,7 +70,8 @@ JUnit 是 Java 的一个框架，所以最根本的需要是在你的机器里�
 使用以上解释的 **Java-version** 命令验证 Java 安装。 
 
 ## 步骤3：下载 Junit 档案
-从 **http://www.junit.org** 下载 JUnit 最新版本的压缩文件。在编写这个教程的同时，我已经下载了 *Junit-4.10.jar* 并且经他复制到 C:\>JUnit 文件夹里了。
+
+从 **http://www.junit.org** 下载 JUnit 最新版本的压缩文件。在编写这个教程的同时，我已经下载了 *Junit-4.10.jar* 并且将它复制到 C:\>JUnit 文件夹里了。
 
 |**OS**|**档案名称**|
 |:---|:-----|
