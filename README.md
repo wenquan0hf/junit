@@ -4,6 +4,8 @@ JUnit 是一个 Java 编程语言的单元测试框架。JUnit 在测试驱动�
 
 本教程将教你在日常生活中的任何项目的单元测试中，在使用 Java 编程语言时，如何使用 JUnit 。
 
+原文地址：[http://www.tutorialspoint.com/junit](http://www.tutorialspoint.com/junit)
+
 ## 读者
 
 本教程是为初学者准备的，来帮助他们了解 JUnit 工具的基本功能。阅读完本教程后，你会发现自己在使用 JUnit 测试框架专业知识方面处在一个中等水平，之后你可以把自己提升到一个更高的水平。
