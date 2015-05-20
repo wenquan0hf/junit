@@ -6,7 +6,7 @@ JUnit 是 Java 的一个框架，所以最根本的需要是在你的机器里�
 
 ## 系统要求
 
-|**JDK**| 1.5或1.5以上|
+|**JDK**| 1.5 或1.5以上|
 |:---|:------------|
 |**内存**|没有最小要求|
 |**磁盘空间**|没有最小要求|
@@ -52,7 +52,7 @@ JUnit 是 Java 的一个框架，所以最根本的需要是在你的机器里�
 
 使用以上解释的 **Java-version** 命令验证 Java 安装。 
 
-## 步骤3：下载 Junit 档案
+## 步骤3：下载 jar 包
 
 从 **http://www.junit.org** 下载 JUnit 最新版本的压缩文件。在编写这个教程的同时，我已经下载了 *Junit-4.10.jar* 并且将它复制到 C:\>JUnit 文件夹里了。
 
@@ -82,7 +82,7 @@ JUnit 是 Java 的一个框架，所以最根本的需要是在你的机器里�
 |Linux	|输出 CLASSPATH=$CLASSPATH:$JUNIT_HOME/junit4.10.jar:.|
 |Mac	  |输出 CLASSPATH=$CLASSPATH:$JUNIT_HOME/junit4.10.jar:.|
 
-## 步骤6：测试 JUnit 建立
+## 步骤6：创建 JUnit 测试
 
 在 **C:\ > JUNIT_WORKSPACE** 中创建一个 java 类文件，名称为 TestJunit。
 
