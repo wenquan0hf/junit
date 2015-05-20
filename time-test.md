@@ -1,6 +1,6 @@
 # JUnit - 时间测试  
 
-Junit 提供了一个暂停的方便选项。如果一个测试样例比起指定的毫秒数花费了更多的时间，那么 Junit 将自动将它标记为失败。**timeout** 参数和 @Test 注释一起使用。现在让我们看看活动中的 @test(timeout)。  
+Junit 提供了一个暂停的方便选项。如果一个测试用例比起指定的毫秒数花费了更多的时间，那么 Junit 将自动将它标记为失败。**timeout** 参数和 @Test 注释一起使用。现在让我们看看活动中的 @test(timeout)。  
 
 ## 创建一个类  
 
@@ -39,7 +39,7 @@ public class MessageUtil {
 ## 创建 Test Case 类 
 
 - 创建一个叫做 TestJunit.java 的 java 测试类。  
-- 给 testPrintMessage() 测试样例添加 1000 的暂停时间。  
+- 给 testPrintMessage() 测试用例添加 1000 的暂停时间。  
 
 在 **C:\JUNIT_WORKSPACE** 中创建一个文件名为 TestJunit.java 的 java 类。  
 
@@ -94,13 +94,13 @@ public class TestRunner {
 C:\JUNIT_WORKSPACE>javac MessageUtil.java TestJunit.java TestRunner.java
 ```
 
-现在运行 Test Runner，它将运行由提供的 Test Case 类中所定义的测试样例。  
+现在运行 Test Runner，它将运行由提供的 Test Case 类中所定义的测试用例。  
 
 ```
 C:\JUNIT_WORKSPACE>java TestRunner
 ```
 
-验证输出。testPrintMessage() 测试样例将标记单元测试失败。
+验证输出。testPrintMessage() 测试用例将标记单元测试失败。
 
 ```
 Inside testPrintMessage()

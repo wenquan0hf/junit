@@ -1,10 +1,8 @@
-# JUnit 
+# JUnit 入门教程
 
 JUnit 是一个 Java 编程语言的单元测试框架。JUnit 在测试驱动的开发方面有很重要的发展，是起源于 JUnit 的一个统称为 xUnit 的单元测试框架之一。
 
-本教程将教你在日常生活中的任何项目的单元测试中，在使用 Java 编程语言时，如何使用 JUnit 。
-
-原文地址：[http://www.tutorialspoint.com/junit](http://www.tutorialspoint.com/junit)
+本教程将教你用 Java 编程语言做单元测试时，如何使用 JUnit。
 
 ## 读者
 

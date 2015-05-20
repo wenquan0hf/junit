@@ -1,7 +1,7 @@
 # JUnit - 执行测试
 
 测试用例是使用 JUnitCore 类来执行的。JUnitCore 是运行测试的外观类。它支持运行 JUnit 4 测试, JUnit 3.8.x 测试,或者他们的混合。
-要从命令行运行测试，可以运行 java org.junit.runner.JUnitCore <TestClass>。对于只有一次的对于只有一次的测试运行，可以使用静态方法 runClasses(Class[])。
+要从命令行运行测试，可以运行 java org.junit.runner.JUnitCore <TestClass>。对于只有一次的测试运行，可以使用静态方法 runClasses(Class[])。
 
 下面是 org.junit.runner.JUnitCore 类的声明：
 
@@ -11,7 +11,7 @@ public class JUnitCore extends java.lang.Object
 
 ## 创建一个类
 
-- 在目录  C:\ > JUNIT_WORKSPACE 中创建一个被测试的 Java 类命名为 MessageUtil.java。
+- 在目录 **C:\ > JUNIT_WORKSPACE** 中创建一个被测试的 Java 类命名为 MessageUtil.java。
 
 ```
 /*
@@ -59,7 +59,7 @@ public class TestJunit {
 }
 ```
 
-## 创建 Test Runner 类
+## 创建 TestRunner 类
 
 接下来，让我们在目录 **C:\ > JUNIT_WORKSPACE** 创建一个 java 类文件命名为 TestRunner.java 来执行测试用例，导出 JUnitCore 类并且使用 runClasses() 方法，将测试类名称作为参数。
 

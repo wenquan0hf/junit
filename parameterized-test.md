@@ -1,14 +1,14 @@
 # JUnit - 参数化测试
 
-Junit 4 引入了一个新的功能**参数化测试**。参数化测试允许开发人员使用不同的值反复运行同一个测试。你将遵循5个步骤来创建**参数化测试**。  
+Junit 4 引入了一个新的功能**参数化测试**。参数化测试允许开发人员使用不同的值反复运行同一个测试。你将遵循 5 个步骤来创建**参数化测试**。  
 
 - 用 @RunWith(Parameterized.class) 来注释 test 类。
 - 创建一个由 @Parameters 注释的公共的静态方法，它返回一个对象的集合(数组)来作为测试数据集合。  
 - 创建一个公共的构造函数，它接受和一行测试数据相等同的东西。  
 - 为每一列测试数据创建一个实例变量。  
-- 用实例变量作为测试数据的来源来创建你的测试样例。  
+- 用实例变量作为测试数据的来源来创建你的测试用例。  
 
-一旦每一行数据出现测试样例将被调用。让我们看看活动中的参数化测试。  
+一旦每一行数据出现测试用例将被调用。让我们看看活动中的参数化测试。  
 
 ## 创建一个类 
 
@@ -85,9 +85,9 @@ public class PrimeNumberCheckerTest {
 }
 ```
 
-## 创建 Test Runner 类
+## 创建 TestRunner 类
 
-在 **C:\> JUNIT_WORKSPACE** 中创建一个文件名为 TestRunner.java 的 java 类来执行测试样例  
+在 **C:\> JUNIT_WORKSPACE** 中创建一个文件名为 TestRunner.java 的 java 类来执行测试用例  
 
 ```
 import org.junit.runner.JUnitCore;
@@ -105,14 +105,14 @@ public class TestRunner {
 }
 ```
 
-用 javac 编译 PrimeNumberChecker，PrimeNumberCheckerTest 和 Test Runner 类。
+用 javac 编译 PrimeNumberChecker，PrimeNumberCheckerTest 和 TestRunner 类。
 
 ```
 C:\JUNIT_WORKSPACE>javac PrimeNumberChecker.java PrimeNumberCheckerTest.java
 TestRunner.java
 ```
 
-现在运行 Test Runner，它将运行由提供的 Test Case 类中所定义的测试样例。
+现在运行 TestRunner，它将运行由提供的 Test Case 类中所定义的测试用例。
 
 ```
 C:\JUNIT_WORKSPACE>java TestRunner

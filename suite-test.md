@@ -6,7 +6,7 @@
 
 ## 创建一个类
 
-在目录  **C:\ > JUNIT_WORKSPACE** 中创建一个被测试的 java 类命名为 MessageUtil.java
+在目录 **C:\ > JUNIT_WORKSPACE** 中创建一个被测试的 java 类命名为 MessageUtil.java
 
 ```
 /*

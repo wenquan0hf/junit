@@ -40,7 +40,7 @@ public class MessageUtil {
 ## 创建 Test Case 类 
 
 - 创建一个叫做 TestJunit.java 的 java 测试类。
-- 给 testPrintMessage() 测试样例添加需要的异常 ArithmeticException。  
+- 给 testPrintMessage() 测试用例添加需要的异常 ArithmeticException。  
 
 在 **C:\> JUNIT_WORKSPACE** 中创建一个文件名为 TestJunit.java 的 java 类  
 
@@ -69,9 +69,9 @@ public class TestJunit {
 }
 ```
 
-## 创建 Test Runner 类
+## 创建 TestRunner 类
 
-在 **C:\> JUNIT_WORKSPACE** 中创建一个文件名为 TestJunit.java 的 java 类来执行测试样例。
+在 **C:\> JUNIT_WORKSPACE** 中创建一个文件名为 TestJunit.java 的 java 类来执行测试用例。
 
 ```
 import org.junit.runner.JUnitCore;
@@ -95,13 +95,13 @@ public class TestRunner {
 C:\JUNIT_WORKSPACE>javac MessageUtil.java TestJunit.java TestRunner.java
 ```
 
-现在运行 Test Runner，它将运行由提供的 Test Case 类中所定义的测试样例。
+现在运行 Test Runner，它将运行由提供的 Test Case 类中所定义的测试用例。
 
 ```
 C:\JUNIT_WORKSPACE>java TestRunner
 ```
 
-验证输出。testPrintMessage() 测试样例将通过。
+验证输出。testPrintMessage() 测试用例将通过。
 
 ```
 Inside testPrintMessage()

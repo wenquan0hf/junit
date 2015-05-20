@@ -20,9 +20,9 @@
 
 ![image](images/eclipse_properties.jpg)
 
-- 我们假设你的 eclipse 已经内置了 junit 插件并且它在 C:\>eclipse/plugins 目录下不能获得，那么你可以从 [JUnit Plugin](http://sourceforge.net/projects/e-junitdoclet/files/latest/download) 上下载。在 eclipse 的插件文件夹中解压下载的 zip 文件。最后重启 eclipse。  
+- 我们假设你的 eclipse 已经内置了 junit 插件并且它在 C:\>eclipse/plugins 目录下，如不能获得，那么你可以从 [JUnit Plugin](http://sourceforge.net/projects/e-junitdoclet/files/latest/download) 上下载。在 eclipse 的插件文件夹中解压下载的 zip 文件。最后重启 eclipse。  
 
-**现在你的 eclipse 已经准备好 JUnit 测试样例的开发了。**  
+**现在你的 eclipse 已经准备好 JUnit 测试用例的开发了。**  
 
 ## 步骤 3：核实 Eclipse 中的 Junit 安装
 

@@ -1,6 +1,6 @@
-# JUnit - 使用断言（Assertion）
+# JUnit - 使用断言
 
-## 断言（Assertion）
+## 断言
 
 所有的断言都包含在 Assert 类中  
 
@@ -8,7 +8,7 @@
 public class Assert extends java.lang.Object
 ```  
 
-这个类提供了很多编写测试的有用的断言的方法。只有失败的断言才会被记录。**Assert** 类中的一些有用的方法列式如下：  
+这个类提供了很多有用的断言方法来编写测试用例。只有失败的断言才会被记录。**Assert** 类中的一些有用的方法列式如下：  
 
 |序号   | 方法和描述         |
 |:---------|:------------|  
@@ -69,7 +69,7 @@ public class TestAssertions {
 }
 ```
 
-接下来，我们在 **C:\ > JUNIT_WORKSPACE** 路径下创建一个文件名为 **TestRunner.java** 的类来执行测试案例  
+接下来，我们在 **C:\ > JUNIT_WORKSPACE** 路径下创建一个文件名为 **TestRunner.java** 的类来执行测试用例  
 
 ```
 import org.junit.runner.JUnitCore;
@@ -87,7 +87,7 @@ public class TestRunner2 {
 } 
 ```  
 
-用javac编译 Test case 和 Test Runner 类  
+用 javac 编译 Test case 和 Test Runner 类  
 
 ```
 C:\JUNIT_WORKSPACE>javac TestAssertions.java TestRunner.java
@@ -106,9 +106,9 @@ C:\JUNIT_WORKSPACE>java TestRunner
 true
 ``` 
 
-## 注释（Annotation）
+## 注释
 
-注释就好像你可以在你的代码中添加并且在方法或者类中应用的元标签。JUnit中的这些注释为我们提供了测试方法的相关信息，哪些方法将会在测试方法前后应用，哪些方法将会在所有方法前后应用，哪些方法将会在执行中被忽略。  
+注释就好像你可以在你的代码中添加并且在方法或者类中应用的元标签。JUnit 中的这些注释为我们提供了测试方法的相关信息，哪些方法将会在测试方法前后应用，哪些方法将会在所有方法前后应用，哪些方法将会在执行中被忽略。  
 JUnit 中的注释的列表以及他们的含义：
 
 |序号   | 注释和描述         |
@@ -188,7 +188,7 @@ public class TestRunner {
 } 
 ```  
 
-用javac编译 Test case 和 Test Runner 类  
+用 javac 编译 Test case 和 Test Runner 类  
 
 ```
 C:\JUNIT_WORKSPACE>javac TestAssertions.java TestRunner.java

@@ -4,7 +4,7 @@
 
 ## 创建一个类
 
-- 在  **C:\ > JUNIT_WORKSPACE** 路径下创建一个名为 MessageUtil.java 的类用来测试。  
+- 在**C:\ > JUNIT_WORKSPACE** 路径下创建一个名为 MessageUtil.java 的类用来测试。  
 
 ```
 /*
@@ -35,7 +35,7 @@ public class MessageUtil {
 - 向方法中添加 Annotaion @Test。
 - 执行测试条件并且应用 Junit 的 assertEquals API 来检查。
 
-在 **C:\ > JUNIT_WORKSPACE** 路径下创建一个文件名为 TestJunit.java 的类  
+在**C:\ > JUNIT_WORKSPACE**路径下创建一个文件名为 TestJunit.java 的类  
 
 ```
 import org.junit.Test;
