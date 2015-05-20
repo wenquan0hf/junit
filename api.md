@@ -2,7 +2,7 @@
 
 ## JUnit 中的重要的 API
 
-JUnit 中的最重要的程序包是 **junit.framework** 它包含了所有的核心类。一些重要的类列示如下：   
+JUnit 中的最重要的程序包是 **junit.framework** 它包含了所有的核心类。一些重要的类如下：   
 
 |序号   | 类的名称         | 类的功能 |  
 |:---------|:------------|:--------|  
@@ -19,7 +19,7 @@ JUnit 中的最重要的程序包是 **junit.framework** 它包含了所有的�
 public class Assert extends java.lang.Object
 ```  
 
-这个类提供了一系列的编写测试的有用的声明方法。只有失败的声明方法才会被记录。**Assert** 类的重要方法列式如下：  
+这个类提供了一系列的编写测试的有用的声明方法。只有失败的声明方法才会被记录。**Assert** 类的重要方法如下：  
 
 |序号   | 方法和描述         |
 |:---------|:------------|
@@ -99,7 +99,7 @@ true
 public abstract class TestCase extends Assert implements Test
 ```  
 
-测试样例定义了运行多重测试的固定格式。**TestCase** 类的一些重要方法列式如下：  
+测试样例定义了运行多重测试的固定格式。**TestCase** 类的一些重要方法如下：  
 
 |序号   | 方法和描述         |
 |:---------|:------------|
@@ -196,7 +196,7 @@ true
 public class TestResult extends Object
 ```  
 
-TestResult 类收集所有执行测试案例的结果。它是收集参数层面的一个实例。这个实验框架区分失败和错误。失败是可以预料的并且可以通过假设来检查。错误是不可预料的问题就像 ArrayIndexOutOfBoundsException。TestResult 类的一些重要方法列式如下：  
+TestResult 类收集所有执行测试案例的结果。它是收集参数层面的一个实例。这个实验框架区分失败和错误。失败是可以预料的并且可以通过假设来检查。错误是不可预料的问题就像 ArrayIndexOutOfBoundsException。TestResult 类的一些重要方法如下：  
 
 |序号   | 方法和描述         |
 |:---------|:------------|
@@ -284,7 +284,7 @@ true
 public class TestSuite extends Object implements Test
 ```  
 
-TestSuite 类是测试的组成部分。它运行了很多的测试案例。TestSuite 类的一些重要方法列式如下：  
+TestSuite 类是测试的组成部分。它运行了很多的测试案例。TestSuite 类的一些重要方法如下：  
 
 |序号   | 方法和描述         |
 |:---------|:------------|
