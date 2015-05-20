@@ -12,7 +12,7 @@ JUnit 是 Java 的一个框架，所以最根本的需要是在你的机器里�
 |**磁盘空间**|没有最小要求|
 |**操作系统**|没有最小要求|
 
-## 步骤1：在你的机器里验证 Java 装置
+## 步骤1：在你的机器里验证 Java 环境
 
 现在打开控制台，执行以下 **java** 要求。
 
@@ -32,7 +32,7 @@ JUnit 是 Java 的一个框架，所以最根本的需要是在你的机器里�
 
 如果你还没有安装 Java，从以下网址安装 **[http://www.oracle.com/technetwork/java/javase/downloads/index.html](http://www.oracle.com/technetwork/java/javase/downloads/index.html)** Java SDK。我们采用 Java 1.6.0_21 作为本教程的安装版本。
 
-## 步骤2：设置 JAVA 环境
+## 步骤2：设置 Java 环境
 
 设置 **JAVA_HOME** 环境变量，使之指向基本目录位置，即在你机器上安装 Java 的位置。
 
